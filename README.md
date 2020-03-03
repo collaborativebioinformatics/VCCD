@@ -8,16 +8,6 @@ https://docs.google.com/presentation/d/1MpJApYz2GaIGs0vEjEaYTzzHkqV7lcl38QZDVW-i
 
 # GoodDoc -- A Template for Simple and Clear Documentation of Bioinformatics Code!
 
-## Please cite our work -- here is the ICMJE Standard Citation:
-
-### ...and a link to the DOI:
-
-## Awesome Logo
-
-### You can make a free DOI with zenodo <link>
-
-## Website (if applicable)
-
 ## Intro statement
 
 ## What's the problem?
