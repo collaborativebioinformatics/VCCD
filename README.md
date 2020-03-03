@@ -1,5 +1,5 @@
 # VCCD
-Variant Clusters in Complex Disease
+Variant Clusters in Complex Disease/Building reproducible pipelines
 
 
 Link to group slides from March 3, 2020 Presentation
