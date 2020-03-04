@@ -32,7 +32,8 @@ import scala.io.Source
 
 object featureExtractor {
   def main(args: Array[String]): Unit = {
-    val genotypeFile = "ALL.chrY.phase3_integrated_v2a.20130502.genotypes.vcf"
+    //val genotypeFile = "ALL.chrY.phase3_integrated_v2a.20130502.genotypes.vcf"
+    val genotypeFile = "ALL.chrY.phase3_integrated_v1b.20130502.genotypes.vcf"
     val panelFile = "genotypes.panel"
 
 val conf: SparkConf = new SparkConf()
@@ -77,10 +78,10 @@ val conf: SparkConf = new SparkConf()
     //If you want to generate RDD out of multiple vcf files, use the following:
     //val allGenotypes:RDD[Genotype] = sc.loadGenotypes('VCF_files/*.vcf', stringency = ValidationStringency.SILENT).rdd 
     
-    val genotypes0 = sc.loadGenotypes("VCF_files/1.vcf", stringency = ValidationStringency.SILENT)
+    val genotypes0 = sc.loadGenotypes("ALL.chrY.phase3_integrated_v1b.20130502.genotypes.vcf", stringency = ValidationStringency.SILENT)
     
     //val genotypes0 = sc.loadGenotypes("sample0.vcf")
-    val genotypes1 = sc.loadGenotypes("VCF_files/2.vcf")
+    val genotypes1 = sc.loadGenotypes("ALL.chrY.phase3_integrated_v1b.20130502.genotypes.vcf")
     val union = genotypes0.union(genotypes1)
     val rdd: RDD[Genotype] = union.rdd
 
@@ -203,5 +204,3 @@ val conf: SparkConf = new SparkConf()
     sparkSession.stop()
   }
 }
-
-
