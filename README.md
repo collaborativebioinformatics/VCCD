@@ -6,70 +6,29 @@ Link to group slides from March 3, 2020 Presentation
 
 https://docs.google.com/presentation/d/1MpJApYz2GaIGs0vEjEaYTzzHkqV7lcl38QZDVW-iICM/edit?usp=sharing
 
-# GoodDoc -- A Template for Simple and Clear Documentation of Bioinformatics Code!
+# PrecisionMedicineFeatureExtraction
 
-## Intro statement
+## This docker will do feature extraction for clustering latent vectors from a vcf for deep learning 
+
+#### Learning is not implemented yet
 
 ## What's the problem?
 
+#### GWAS is not sufficient and clustering methods are not simple enough to be implemented by most bioinformaticians
+
 ## Why should we solve it?
 
-# What is <this software>?
+#### Because we can bridge the gap between computer science and bioinformatics!
 
-Overview Diagram
+# What is Recurrent Deep Embedding Networks for Genotype Clustering and Ethnicity Prediction?
 
-# How to use <this software>
+https://arxiv.org/abs/1805.12218
 
-# Software Workflow Diagram
++ A software package that is awesome, but very complicated to run.  
 
-# File structure diagram 
-#### _Define paths, variable names, etc_
++ We would eventually like to tag this onto a variant annotator such that one can annotate variants and networks with opencravat:
 
-# Installation options:
+https://opencravat.org
 
-We provide two options for installing <this software>: Docker or directly from Github.
-
-### Docker
-
-The Docker image contains <this software> as well as a webserver and FTP server in case you want to deploy the FTP server. It does also contain a web server for testing the <this software> main website (but should only be used for debug purposes).
-
-1. `docker pull ncbihackathons/<this software>` command to pull the image from the DockerHub
-2. `docker run ncbihackathons/<this software>` Run the docker image from the master shell script
-3. Edit the configuration files as below
-
-### Installing <this software> from Github
-
-1. `git clone https://github.com/NCBI-Hackathons/<this software>.git`
-2. Edit the configuration files as below
-3. `sh server/<this software>.sh` to test
-4. Add cron job as required (to execute <this software>.sh script)
-
-### Configuration
-
-```Examples here```
-
-# Testing
-
-We tested four different tools with <this software>. They can be found in [server/tools/](server/tools/) . 
-
-# Additional Functionality
-
-### DockerFile
-
-<this software> comes with a Dockerfile which can be used to build the Docker image.
-
-  1. `git clone https://github.com/NCBI-Hackathons/<this software>.git`
-  2. `cd server`
-  3. `docker build --rm -t <this software>/<this software> .`
-  4. `docker run -t -i <this software>/<this software>`
-  
-### Website
-
-There is also a Docker image for hosting the main website. This should only be used for debug purposes.
-
-  1. `git clone https://github.com/NCBI-Hackathons/<this software>.git`
-  2. `cd Website`
-  3. `docker build --rm -t <this software>/website .`
-  4. `docker run -t -i <this software>/website`
-  
+# git clone this repo to use it! There is a dockerfile, but you need to provision your own java within it!
 
